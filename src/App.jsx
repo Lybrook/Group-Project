@@ -1,14 +1,17 @@
 import './App.css'
 import FruitList from "./FruitList"
+import { useEffect, useState } from 'react';
+
 function App() {
-const fruits = [
-  {id: 1,name: "Orange",color:"orange", cost: 20},
-  {id: 2,name: "WaterMelon",color:"dark green", cost: 20},
-  {id: 3,name: "StrawBerry",color:"red", cost: 20},
-  {id: 4,name: "Lemon",color:"yellow", cost: 20},
-  {id: 5,name: "BlueBerry",color:"purple", cost: 20},
+const [fruits,setfruits] = useState ([]);
   
-];
+useEffect(() => {
+  fetch("http://localhost:5000/fruits")
+    .then(response => response.json())
+    .then(data => setFruits(data))
+    .catch(error => console.error("Error fetching data:", error));
+}, []);
+
 
   return (
     <>
