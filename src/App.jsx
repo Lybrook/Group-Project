@@ -1,18 +1,19 @@
 import './App.css'
-import StudentList from "./StudentList"
+import FruitList from "./FruitList"
 function App() {
-const students = [
-  {id: 1,name: "John",tm:"Nelson", age: 20},
-  { id: 2, name: "Jane", tm: "Smith", age: 21 },
-  { id: 3, name: "Mike", tm: "Taylor", age: 22 },
-  { id: 4, name: "Emily", tm: "Brown", age: 23 },
-  { id: 5, name: "Chris", tm: "Johnson", age: 24 },
+const fruits = [
+  {id: 1,name: "Orange",color:"orange", cost: 20},
+  {id: 2,name: "WaterMelon",color:"dark green", cost: 20},
+  {id: 3,name: "StrawBerry",color:"red", cost: 20},
+  {id: 4,name: "Lemon",color:"yellow", cost: 20},
+  {id: 5,name: "BlueBerry",color:"purple", cost: 20},
+  
 ];
 
   return (
     <>
-    <h1>React Crud</h1>
-    <StudentList students={students} />  
+    <h1>Fruit App</h1>
+    <FruitList fruits={fruits} />  
     </>
   )
  
