@@ -1,10 +1,10 @@
 import FruitItem from "./FruitItem";
 
-function FruitList({ fruits=[] }) {
+function FruitList({ fruits = [] }) {
   return (
     <div>
       <div className="fruit-list"></div>
-      {students.map(student => (
+      {fruits.map(fruit => (
         <FruitItem
           key={fruit.id}
           name={fruit.name}
