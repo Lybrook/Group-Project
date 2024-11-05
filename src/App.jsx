@@ -1,5 +1,7 @@
 import './App.css'
 import FruitList from "./FruitList"
+import { useState } from 'react';
+
 function App() {
 const fruits = [
   {id: 1,name: "Orange",color:"orange", cost: 20},
