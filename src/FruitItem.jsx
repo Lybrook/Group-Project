@@ -1,8 +1,8 @@
 function FruitItem({ name, color, cost }) {
     return (
-      <div>
-        <p>Name: {name}</p>
-        <p>color: {color}</p>
+      <div className="fruit-card">
+        <h1>Name: {name}</h1>
+        <h2>color: {color}</h2>
         <p>Cost: {cost}</p>
       </div>
     );

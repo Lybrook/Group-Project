@@ -66,3 +66,38 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* FruitItem.css */
+
+.fruit-card {
+  background-color: #f5f5f5; /* Light background for card */
+  border: 2px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 16px;
+  margin: 16px 0;
+  max-width: 400px;
+  transition: transform 0.2s;
+}
+
+.fruit-card:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.fruit-card h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.fruit-card h2 {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.fruit-card p {
+  font-size: 18px;
+  color: #999;
+  margin: 0;
+}
+
