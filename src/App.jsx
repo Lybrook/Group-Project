@@ -3,7 +3,7 @@ import FruitList from "./FruitList"
 import { useEffect, useState } from 'react';
 
 function App() {
-const [fruits,setfruits] = useState ([]);
+const [fruits, setFruits] = useState ([]);
   
 useEffect(() => {
   fetch("http://localhost:5000/fruits")
